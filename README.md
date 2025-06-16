@@ -7,12 +7,6 @@ This project models a simplified Zomato-like food delivery platform using MySQL.
 
 ---
 
-## 📂 Contents
-
-- [`sql/zomato_schema_and_queries.sql`](./sql/zomato_schema_and_queries.sql): Full SQL script for schema and sample queries.
-- [`data/deliveries_data.csv`](./data/deliveries_data.csv): Sample delivery dataset (400 records) ready to be imported.
-
----
 
 ## 🏗️ Database Schema
 
