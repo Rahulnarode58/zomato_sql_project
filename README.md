@@ -12,11 +12,13 @@ This project models a simplified Zomato-like food delivery platform using MySQL.
 
 ### 'Create Database'
 
-``` Create Database Zomato_DB; ```
+```sql
+Create Database Zomato_DB; ```
 
 ### 'Use Database'
 
-``` Use Zomato_DB ```
+```sql
+Use Zomato_DB; ```
 
 ### 1. `Customer`
 ```sql
