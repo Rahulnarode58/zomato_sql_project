@@ -1,7 +1,7 @@
 # Zomato SQL Project
 
 
-# 🍽️ Zomato Food Delivery Database Project
+
 
 This project models a simplified Zomato-like food delivery platform using MySQL. It includes schema creation, data relationships, and SQL queries to perform analysis and insights.
 
@@ -15,6 +15,14 @@ This project models a simplified Zomato-like food delivery platform using MySQL.
 ---
 
 ## 🏗️ Database Schema
+
+### 'Create Database'
+
+``` Create Database Zomato_DB; ```
+
+### 'Use Database'
+
+``` Use Zomato_DB ```
 
 ### 1. `Customer`
 ```sql
@@ -75,25 +83,25 @@ CREATE TABLE deliveries (
 
 ---
 
-## 📊 Sample SQL Queries
+## 📊 Questions Related to Projects
 
-- **All Customers**
+- **Retrieve All Customer Names**
 ```sql
 SELECT * FROM Customer;
 ```
 
-- **Restaurants in Mumbai**
+- **List all restaurants where the city is Mumbai**
 ```sql
 SELECT * FROM Restaurants WHERE city = 'Mumbai';
 ```
 
-- **Orders in the Last Month**
+- **Find restaurants that open before noon**
 ```sql
 SELECT * FROM Orders
 WHERE order_date >= DATE_SUB(CURRENT_DATE(), INTERVAL 1 MONTH);
 ```
 
-- **Top 5 Spending Customers**
+- **Find the top 5 customers who have spent the most**
 ```sql
 SELECT customer_id, SUM(total_amount) AS total_spent
 FROM Orders
@@ -102,7 +110,7 @@ ORDER BY total_spent DESC
 LIMIT 5;
 ```
 
-- **Top 3 Revenue Restaurants (Delivered Only)**
+- **Find the top 3 restaurants with the highest total revenue from delivered orders**
 ```sql
 SELECT r.restaurant_name, SUM(o.total_amount) AS total_revenue
 FROM Restaurants r
@@ -113,15 +121,6 @@ GROUP BY r.restaurant_id
 ORDER BY total_revenue DESC
 LIMIT 3;
 ```
-
-_For the full list of queries, check the [SQL file](./sql/zomato_schema_and_queries.sql)_
-
----
-
-## 📎 Dataset
-
-🗂️ **[Download Deliveries Data (CSV)](./data/deliveries_data.csv)**  
-The dataset contains 400 records mapped to valid order_ids and rider_ids.
 
 ---
 
