@@ -7,7 +7,7 @@ This project models a simplified Zomato-like food delivery platform using MySQL.
 
 ---
 
-![Alt text]([image_path_or_URL](https://github.com/Rahulnarode58/zomato_sql_project/blob/main/ER.png))
+![ER Diagram](https://github.com/Rahulnarode58/zomato_sql_project/blob/main/ER.png?raw=true)
 
 
 ---
